@@ -29,6 +29,8 @@ Rails.application.routes.draw do
   #     end
   #   end
   root 'welcome#index'
+  get 'my_portfolio', to: "users#my_portfolio"
+  get 'search_stocks', to: "stocks#search"
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
